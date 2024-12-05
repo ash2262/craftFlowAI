@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}";
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\diagram-generator\\\\page.tsx -> @/components/DiagramGenerator\":{\"id\":\"app\\\\diagram-generator\\\\page.tsx -> @/components/DiagramGenerator\",\"files\":[\"static/css/_app-pages-browser_components_DiagramGenerator_tsx.css\",\"static/chunks/_app-pages-browser_components_DiagramGenerator_tsx.js\"]}}"

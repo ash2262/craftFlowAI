@@ -1,19 +1,23 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
+import Image from 'next/image'
 
 export function LandingPageComponent() {
-  const [email, setEmail] = useState<string>('')
+  const [email, setEmail] = useState('')
   const ctaRef = useRef<HTMLDivElement>(null)
+  const router = useRouter()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle email submission logic here
+    // Here you would typically handle the email submission
     console.log('Submitted email:', email)
+    // Navigate to the diagram generator page
+    router.push('/diagram-generator')
   }
 
   const scrollToCTA = () => {
@@ -53,8 +57,6 @@ export function LandingPageComponent() {
                     width={400}
                     height={200}
                     className="w-full h-48 object-contain bg-white"
-                    unoptimized={true}
-                    priority={true}
                   />
                 ) : (index === 1 ? (
                   <Image
